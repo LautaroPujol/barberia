@@ -1,5 +1,4 @@
-const BASE_URL = "http://localhost:3001/api";
-
+const BASE_URL = "https://barberia-backend-production-ae09.up.railway.app/api";
 const handleResponse = async (res) => {
   const data = await res.json();
   if (!res.ok) throw new Error(data.message || "Error en la solicitud");
