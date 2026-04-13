@@ -1,4 +1,4 @@
-const BASE_URL = "https://barberia-backend-production-ae09.up.railway.app/api";
+const BASE_URL = import.meta.env.VITE_API_URL + "/api";
 const handleResponse = async (res) => {
   const data = await res.json();
   if (!res.ok) throw new Error(data.message || "Error en la solicitud");
